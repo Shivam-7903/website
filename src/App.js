@@ -8,7 +8,7 @@ import Content from "./object/content.jsx"
 import LowerMiddle from "./components/lower-middle.jsx"
 import Success_bar from "./components/success-bar.jsx"
 import Stories from "./object/stories.jsx"
-
+import Form from "./form.jsx"
 function storyMapping(item){
   return (
     <Success_bar
@@ -61,6 +61,8 @@ function App() {
         {Stories.map(storyMapping)}
         {Stories.map(storyMapping)}
            </div>
+
+          <Form/> 
     </div>
   );
 }
