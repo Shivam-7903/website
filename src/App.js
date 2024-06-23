@@ -6,6 +6,24 @@ import Middle2 from"./components/middle2.jsx"
 import Middle_part3 from "./components/middle_part3.jsx"
 import Content from "./object/content.jsx"
 import LowerMiddle from "./components/lower-middle.jsx"
+import Success_bar from "./components/success-bar.jsx"
+import Stories from "./object/stories.jsx"
+
+function storyMapping(item){
+  return (
+    <Success_bar
+      key={item.id}
+      photo={item.img}
+       photo2={item.img2}
+      name={item.name}
+      story={item.story}
+      
+     
+    />
+    
+  );
+}
+
 
 function contentMapping(Content){
   return (
@@ -36,7 +54,13 @@ function App() {
         {Content.map(contentMapping)}
            </div>
           <LowerMiddle/>
-          
+          <div  class="headin" style={{fontSize:"larger",marginTop:"0rem"}}>
+         <h1>Our success stories!</h1>
+         </div>
+          <div class="stories" id="stories">
+        {Stories.map(storyMapping)}
+        {Stories.map(storyMapping)}
+           </div>
     </div>
   );
 }
