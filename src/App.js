@@ -9,6 +9,8 @@ import LowerMiddle from "./components/lower-middle.jsx"
 import Success_bar from "./components/success-bar.jsx"
 import Stories from "./object/stories.jsx"
 import Form from "./form.jsx"
+import Questions from"./questoins.jsx"
+import Services from "./customer service.jsx"
 function storyMapping(item){
   return (
     <Success_bar
@@ -63,6 +65,11 @@ function App() {
            </div>
 
           <Form/> 
+          <div  class="headin" style={{fontSize:"larger",marginTop:"0rem"}}>
+         <h1>Frequently Asked Questions!</h1>
+         </div>
+          <Questions/>
+          <Services/>
     </div>
   );
 }
